@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GuestHouseCafe — Hungry? We've got you.</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar">
+  <div class="navbar-inner">
+    <a href="#top" class="logo">GuestHouse<span>Cafe</span></a>
+    <nav class="nav-links">
+      <a href="#restaurants">Restaurants</a>
+      <a href="#offers">Offers</a>
+      <a href="#about">About</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="#" class="btn btn-outline">Log in</a>
+      <a href="#" class="btn btn-solid">Sign up</a>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="top">
+  <div class="hero-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <div class="hero-content">
+    <p class="hero-eyebrow">◆ Jaipur's favourite food guide</p>
+    <h1 class="hero-title">Hungry?<br><em>We've got you.</em></h1>
+    <p class="hero-sub">Search restaurants, cafes and cloud kitchens near you — order in, or book a table in seconds.</p>
+
+    <div class="search-bar" id="searchBar">
+      <div class="search-field">
+        <span class="search-icon">📍</span>
+        <input type="text" id="locationInput" placeholder="Delivery location" value="Jaipur, Rajasthan">
+      </div>
+      <div class="search-divider"></div>
+      <div class="search-field search-field-grow">
+        <span class="search-icon">🔎</span>
+        <input type="text" id="searchInput" placeholder="Search 'biryani', 'cafe', 'pizza'...">
+      </div>
+      <button class="btn btn-gold search-btn" id="searchBtn">Search</button>
+    </div>
+
+    <div class="hero-stats">
+      <div class="hero-stat"><strong>120+</strong><span>Places listed</span></div>
+      <div class="hero-stat"><strong>4.5★</strong><span>Avg. rating</span></div>
+      <div class="hero-stat"><strong>30 min</strong><span>Avg. delivery</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CATEGORIES ===== -->
+<section class="categories-wrap">
+  <div class="categories" id="categories">
+    <button class="category-chip active" data-filter="all"><span class="chip-icon">🍽️</span>All</button>
+    <button class="category-chip" data-filter="north indian"><span class="chip-icon">🍛</span>North Indian</button>
+    <button class="category-chip" data-filter="south indian"><span class="chip-icon">🥞</span>South Indian</button>
+    <button class="category-chip" data-filter="pizza"><span class="chip-icon">🍕</span>Pizza</button>
+    <button class="category-chip" data-filter="cafe"><span class="chip-icon">☕</span>Cafe</button>
+    <button class="category-chip" data-filter="desserts"><span class="chip-icon">🍰</span>Desserts</button>
+    <button class="category-chip" data-filter="chinese"><span class="chip-icon">🥡</span>Chinese</button>
+  </div>
+</section>
+
+<!-- ===== OFFERS ===== -->
+<section class="offers" id="offers">
+  <div class="offer-card offer-card-1">
+    <p class="offer-kicker">LIMITED TIME</p>
+    <p class="offer-tag">Flat 50% OFF</p>
+    <p class="offer-desc">On your first order · use code WELCOME50</p>
+  </div>
+  <div class="offer-card offer-card-2">
+    <p class="offer-kicker">EVERY ORDER</p>
+    <p class="offer-tag">Free Delivery</p>
+    <p class="offer-desc">On orders above ₹299</p>
+  </div>
+  <div class="offer-card offer-card-3">
+    <p class="offer-kicker">WEEKENDS ONLY</p>
+    <p class="offer-tag">B1G1 Desserts</p>
+    <p class="offer-desc">At 20+ partner cafes</p>
+  </div>
+</section>
+
+<!-- ===== RESTAURANT LISTING ===== -->
+<section class="restaurants" id="restaurants">
+  <div class="section-head">
+    <div>
+      <p class="section-kicker">Handpicked for you</p>
+      <h2 class="section-title">Restaurants to explore</h2>
+    </div>
+    <p class="section-count"><span id="resultCount">8</span> places found</p>
+  </div>
+
+  <div class="restaurant-grid" id="restaurantGrid">
+    <!-- Cards injected by JS -->
+  </div>
+
+  <p class="no-results" id="noResults" hidden>No restaurants match your search. Try a different keyword or category.</p>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="about" id="about">
+  <div class="about-card">
+    <h2 class="section-title">About GuestHouseCafe</h2>
+    <p>GuestHouseCafe helps you discover great places to eat — from neighbourhood cafes to full-service restaurants. Search by cuisine, filter by category, and find your next favourite spot. Replace this text with your own story once the real content is ready.</p>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">GuestHouse<span>Cafe</span></div>
+      <div class="footer-links">
+        <a href="#">About us</a>
+        <a href="#">Careers</a>
+        <a href="#">Partner with us</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 GuestHouseCafe. Built with HTML, CSS &amp; JS.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
