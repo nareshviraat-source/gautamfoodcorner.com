@@ -1,0 +1,14 @@
+<div class="restaurant-card">
+    <div class="res-image">
+        <!-- यहाँ नीचे हमने बर्गर की असली सुंदर फोटो का लिंक डाला है -->
+        <img src="https://unsplash.com" alt="Crispy Burger" style="width: 100%; height: 100%; object-fit: cover;">
+    </div>
+    <div class="res-info">
+        <h3>Gautam's Special Burger</h3>
+        <p>Crispy Veg Patty • Cheese • Fresh Veggies</p>
+        <div class="res-meta">
+            <span class="rating">4.5 ★</span>
+            <span class="price">₹50 ONLY</span>
+        </div>
+    </div>
+</div>
